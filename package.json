@@ -17,40 +17,49 @@
   },
   "homepage": "https://github.com/OwlMan77/PathfinderTemplater#readme",
   "gulp": {
-  "srcDir": "src/",
-  "destDir": "public/",
-  "src": {
-    "js": "src/js/",
-    "scss": "src/scss/",
-    "fonts": "src/fonts/",
-    "images": "src/images/"
-  },
-  "dest": {
-    "js": "public/js/",
-    "css": "public/css/",
-    "fonts": "public/fonts/",
-    "images": "public/images/"
-  },
-  "main": {
-    "js": "app.js",
-    "index": "index.html",
-    "scss": "style.scss",
-    "server": "index.js",
-    "gulpfile": "gulpfile.js",
-    "packageJson": "package.json"
-  },
-  "vendor": {
-    "js": "vendor.js",
-    "css": "vendor.css"
-  },
-  "output": {
-    "js": "app.js",
-    "css": "style.css"
+    "srcDir": "src/",
+    "destDir": "public/",
+    "src": {
+      "js": "src/js/",
+      "scss": "src/scss/",
+      "fonts": "src/fonts/",
+      "images": "src/images/"
+    },
+    "dest": {
+      "js": "public/js/",
+      "css": "public/css/",
+      "fonts": "public/fonts/",
+      "images": "public/images/"
+    },
+    "main": {
+      "js": "app.js",
+      "index": "index.html",
+      "scss": "style.scss",
+      "server": "index.js",
+      "gulpfile": "gulpfile.js",
+      "packageJson": "package.json"
+    },
+    "vendor": {
+      "js": "vendor.js",
+      "css": "vendor.css"
+    },
+    "output": {
+      "js": "app.js",
+      "css": "style.css"
+    },
+    "selectors": {
+      "all": "*",
+      "js": "**/*.js",
+      "css": "**/*.css",
+      "scss": "**/*.scss",
+      "html": "**/*.html",
+      "images": "**/*.{png,jpg,jpeg,gif,ico}",
+      "fonts": "**/*.{eot,svg,ttf,woff,woff2}"
+    }
   },
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "mongoose": "^4.9.0"
+    "express": "^4.14.0",
+    "gulp": "^3.9.1"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -69,7 +78,6 @@
     "gulp-imagemin": "^3.1.1",
     "gulp-inject": "^4.1.0",
     "gulp-jshint": "^2.0.2",
-    "gulp-minify-css": "^1.2.4",
     "gulp-nodemon": "^2.2.1",
     "gulp-notify": "^2.2.0",
     "gulp-order": "^1.1.1",

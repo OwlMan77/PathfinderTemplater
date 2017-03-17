@@ -1,0 +1,18 @@
+{
+  "name": "pathfindertemplater",
+  "description": "##What we are doing?",
+  "main": "server.js",
+  "authors": [
+    "JM McGhee"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/OwlMan77/PathfinderTemplater",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
