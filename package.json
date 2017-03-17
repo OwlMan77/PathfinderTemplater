@@ -1,0 +1,20 @@
+{
+  "name": "pathfindertemplater",
+  "version": "1.0.0",
+  "description": "##What we are doing?",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OwlMan77/PathfinderTemplater.git"
+  },
+  "author": "JM McGhee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OwlMan77/PathfinderTemplater/issues"
+  },
+  "homepage": "https://github.com/OwlMan77/PathfinderTemplater#readme"
+}
