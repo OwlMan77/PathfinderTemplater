@@ -60,7 +60,8 @@
   "dependencies": {
     "cors": "^2.8.1",
     "express": "^4.14.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "morgan": "^1.8.1"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
