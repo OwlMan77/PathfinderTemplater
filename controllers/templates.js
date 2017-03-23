@@ -16,7 +16,7 @@ function templateIndex(req, res){
 //will save a new template unless there is an error
 function templateCreate(req, res){
   const template = new Template(req.body);
-  template.save((err. user) => {
+  template.save((err, user) => {
     if (err) res.status(500).json({message: 'Something went wrong with templateCreate'});
     return res.status(201).json(template);
   });
