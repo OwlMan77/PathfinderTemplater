@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 
 const maxNum = 99 ;
 const monsterSchema = mongoose.Schema({

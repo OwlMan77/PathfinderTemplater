@@ -9,6 +9,7 @@ const routes      = require('./config/routes');
 const dest        = `${__dirname}/public`
 
 mongoose.connect(config.db);
+mongoose.Promise = require('bluebird');
 
 if(app.get('env') !== 'production') app.use(cors());
 app.use(morgan('dev'));
