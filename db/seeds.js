@@ -25,7 +25,7 @@ const monsters = [
     typeOfMonster: {family: 'humanoid', species:['goblinoid']},
     weaknesses: [],
     spellLikeAbilities:[],
-    melee: [{ name: 'shortsword +2', noOfDie: 1, damageDie: 4}],
+    melee: [{ name: 'shortsword', noOfDie: 1, damageDie: 4}],
     specialAttacks: [],
     specialQuality: []
   },
