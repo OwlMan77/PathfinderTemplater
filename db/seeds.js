@@ -19,7 +19,7 @@ const monsters = [
     fort: 3,
     ref:  2,
     will: –1,
-    dr: { damageReduction: 0, drPierce: '' },
+    dr: {},
     immunities: [],
     resistances:[],
     typeOfMonster: [{family: 'humanoid', species:'goblinoid'}],
@@ -45,9 +45,8 @@ const monsters = [
     weaknesses: ['light sensitivity'],
     spellLikeAbilities:[],
     melee: [{ name: 'spear', noOfDie: 1, damageDie: 6}],
-    ranged: [{ name: {type: String, trim: true}, noOfDie: {type: Number, max: maxNum}, damageDie: {type: Number, max: maxNum}}],
+    ranged: [{ name: 'sling', noOfDie: 1, damageDie: 6}],
     specialAttacks: [],
     specialQuality: []
   }
-
 ];
