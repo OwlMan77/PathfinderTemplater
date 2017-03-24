@@ -1,9 +1,9 @@
 module.exports = {
-index: templateIndex
+index: templateIndex,
 create: templateCreate
 }
 
-const Template = require('../models/templates')
+const Template = require('../models/template')
 
 //will show all templates unless there is an error, if there is an error it will display the error message
 function templateIndex(req, res){

@@ -50,3 +50,4 @@ const monsters = [
     specialQuality: []
   }
 ];
+monsters.forEach(monster => Monster.create(user, (err, monster) => console.log(`${ monster.name } was saved.`)));

@@ -1,5 +1,5 @@
 module.exports = {
-  index: monsterIndex
+  index: monsterIndex,
   create: monsterCreate
 }
 
