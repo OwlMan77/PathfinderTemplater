@@ -13,12 +13,12 @@ const monsters = [
   {
     name: 'Goblin' ,
     cr: 0.33,
-    stats: { str: 11, dex: 15, con: 12, int: 10, cha: 6 , wis: 9}
+    stats: { str: 11, dex: 15, con: 12, int: 10, cha: 6 , wis: 9},
     armourClass: { total: 16, touch: 13, flatFooted: 14, natural: 0},
     hp: 6,
     fort: 3,
     ref:  2,
-    will: –1,
+    will: 1,
     dr: {},
     immunities: [],
     resistances:[],
@@ -32,12 +32,12 @@ const monsters = [
   {
     name: 'Kobold' ,
     cr: 0.33,
-    stats: { str: 11, dex: 15, con: 12, int: 10, cha: 6 , wis: 9}
+    stats: { str: 11, dex: 15, con: 12, int: 10, cha: 6 , wis: 9},
     armourClass: { total: 16, touch: 13, flatFooted: 14, natural: 0},
     hp: 5,
     fort: 3,
     ref:  2,
-    will: –1,
+    will: 1,
     dr: { damageReduction: 0, drPierce: '' },
     immunities: [],
     resistances:[],
@@ -50,4 +50,4 @@ const monsters = [
     specialQuality: []
   }
 ];
-monsters.forEach(monster => Monster.create(user, (err, monster) => console.log(`${ monster.name } was saved.`)));
+monsters.forEach(monster => Monster.create(monster, (err, monster) => console.log(`${ monster.name } was saved.`)));

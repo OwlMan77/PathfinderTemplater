@@ -14,9 +14,9 @@ if(app.get('env') !== 'production') app.use(cors());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
 app.use(express.static(dest));
 
-app.use('/api', routes);
-app.get('/*', (req, res) => res.sendFile(`${dest}/index.html`));
+app.use(routes);
 
 app.listen(config.port, () => console.log(`We are ready to go on port: ${config.port}`));
