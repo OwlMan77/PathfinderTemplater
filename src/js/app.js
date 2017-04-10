@@ -1,4 +1,5 @@
 angular
   .module( 'monster', [
-    'ui-router'
+    'ui-router',
+    'ngResource'
   ]);
