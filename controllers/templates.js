@@ -24,8 +24,9 @@ function templateCreate(req, res){
     return res.status(201).json(template);
   });
 }
+//will show
 function templateShow(req, res) {
-  Monster.findById(req.params.id, (err, monster) => {
+  Template.findById(req.params.id, (err, monster) => {
     if (err) return res.status(500).json({ messsage: 'Something wrong retrieving that spell.' });
     if (!character) return res.status(404).json({ message: 'No spell by that name resides here. '});
     return res.status(200).json(character);
@@ -33,7 +34,7 @@ function templateShow(req, res) {
 }
 
 function templateUpdate(req, res) {
-  Monster.findByIdAndUpdate(req.params.id, req.body, (err, monster) => {
+  Template.findByIdAndUpdate(req.params.id, req.body, (err, monster) => {
     if (err) return res.status(500).json({ messsage: 'Something went wrong with altering that spell.' });
     if (!character) return res.status(404).json({ message: 'That spell cannot be altered.'});
     return res.status(200).json(character);
