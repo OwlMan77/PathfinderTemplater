@@ -1,6 +1,9 @@
 module.exports = {
   index: monsterIndex,
-  create: monsterCreate
+  create: monsterCreate,
+  show: monsterShow,
+  update: monsterUpdate,
+  delete: monsterDelete
 }
 
 const Monster = require('../models/monster');
@@ -18,5 +21,28 @@ function monsterCreate(req, res){
   monster.save((err, monster) => {
     if (err) return res.status(500).json({ message: 'Something went wrong with monsterCreate.' });
     return res.status(201).json(user);
+  });
+}
+
+function monsterShow(req, res) {
+  Monster.findById(req.params.id, (err, monster) => {
+    if (err) return res.status(500).json({ messsage: 'Something went wrong getting that monster.' });
+    if (!character) return res.status(404).json({ message: 'No Monster by that name lives here. '});
+    return res.status(200).json(character);
+  });
+}
+
+function monsterUpdate(req, res) {
+  Monster.findByIdAndUpdate(req.params.id, req.body, (err, monster) => {
+    if (err) return res.status(500).json({ messsage: 'Something went wrong changing that monster.' });
+    if (!character) return res.status(404).json({ message: 'No Monster by that name lives here. '});
+    return res.status(200).json(character);
+  });
+}
+
+function monsterDelete(req, res) {
+  Monster.findByIdAndRemove(req.params.id, err => {
+    if (err) return res.status(500).json({ messsage: 'killing this beast is harder than that.' });
+    return res.sendStatus(204);
   });
 }
