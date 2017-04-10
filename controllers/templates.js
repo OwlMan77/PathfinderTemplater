@@ -24,7 +24,7 @@ function templateCreate(req, res){
     return res.status(201).json(template);
   });
 }
-//will show
+//will show template by id
 function templateShow(req, res) {
   Template.findById(req.params.id, (err, template) => {
     if (err) return res.status(500).json({ messsage: 'Something wrong retrieving that spell.' });
@@ -33,6 +33,7 @@ function templateShow(req, res) {
   });
 }
 
+//will update by id
 function templateUpdate(req, res) {
   Template.findByIdAndUpdate(req.params.id, req.body, (err, template) => {
     if (err) return res.status(500).json({ messsage: 'Something went wrong with altering that spell.' });
@@ -41,6 +42,7 @@ function templateUpdate(req, res) {
   });
 }
 
+//will delete by id 
 function templateDelete(req, res) {
   Monster.findByIdAndRemove(req.params.id, err => {
     if (err) return res.status(500).json({ messsage: 'This magic cannot be dispelled.' });
