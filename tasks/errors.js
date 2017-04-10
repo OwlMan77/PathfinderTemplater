@@ -7,7 +7,7 @@ const onError = function(err) {
     title: 'Something went wrong!',
     subtitle: 'Plugin: <%= error.plugin %>',
     message: 'Error: <%= error.message %>',
-    sound: 'Beep'
+    sound: 'Submarine'
   })(err);
   this.emit('end');
 };
