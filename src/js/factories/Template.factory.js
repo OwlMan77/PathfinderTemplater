@@ -4,10 +4,10 @@ angular
 
 templateFactory.$inject = ['API', '$resource'];
 function templateFactory(API, $resource){
-  return $resource(`${API}/template/:id`, {id: '@_id'},
+  return $resource(`${API}/templates/:id`, {id: '@_id'},
     {
       'get': { method: 'GET', url: `${API}/template/:id`, isArray: false},
-      'delete': {method: 'DELETE', url: `${API}/monsters/:id`},
+      'delete': {method: 'DELETE', url: `${API}/templates/:id`},
       'update': {method: 'PUT' }
     }
   );
