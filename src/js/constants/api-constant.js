@@ -1,3 +1,3 @@
 angular
   .module('pfTemplater')
-  .constant('API', 'http://localhost:3000/api');
+  .constant('API', '${window.location.origin}/api');
