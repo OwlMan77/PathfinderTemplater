@@ -1,5 +1,5 @@
 angular
-  .module('monster')
+  .module('pfTemplater')
   .factory('Template', templateFactory);
 
 templateFactory.$inject = ['API', '$resource'];

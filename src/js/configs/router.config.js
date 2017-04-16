@@ -1,5 +1,5 @@
 angular
-  .module('monster')
+  .module('pfTemplater')
   .config(Router);
 
 Router.$inject = ["$stateProvider", "$locationProvider", "$urlProvider"];

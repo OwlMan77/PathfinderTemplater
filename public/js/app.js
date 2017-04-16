@@ -38059,7 +38059,7 @@ angular.module('ui.router.state')
 angular.module('monster', ['ui-router', 'ngResource']);
 "use strict";
 
-angular.module('monster').config(Router);
+angular.module('pfTemplater').config(Router);
 
 Router.$inject = ["$stateProvider", "$locationProvider", "$urlProvider"];
 function Router($stateProvider, $locationProvider, $urlProvider) {
@@ -38072,11 +38072,11 @@ function Router($stateProvider, $locationProvider, $urlProvider) {
 }
 'use strict';
 
-angular.module('monster').constant('API', 'http://localhost:3000/api');
+angular.module('pfTemplater').constant('API', 'http://localhost:3000/api');
 "use strict";
 'use strict';
 
-angular.module('monster').controller('MonsterIndexCtrl', MonsterIndexCtrl);
+angular.module('pfTemplater').controller('MonsterIndexCtrl', MonsterIndexCtrl);
 
 MonstersIndexCtrl.$index = ['API', 'Monster'];
 function MonsterIndexCtrl(API, Monster) {
@@ -38091,7 +38091,7 @@ function MonsterIndexCtrl(API, Monster) {
 "use strict";
 'use strict';
 
-angular.module('monster').factory('Monster', monsterFactory);
+angular.module('pfTemplater').factory('Monster', monsterFactory);
 
 monsterFactory.$inject = ['API', '$resource'];
 function monsterFactory(API, $resource) {

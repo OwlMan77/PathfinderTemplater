@@ -1,5 +1,5 @@
 angular
-  .module('monster')
+  .module('pfTemplater')
   .controller('MonstersIndexCtrl', MonstersIndexCtrl);
 
 MonstersIndexCtrl.$index = ['API', 'Monster'];
