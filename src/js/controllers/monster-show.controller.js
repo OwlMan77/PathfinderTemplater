@@ -9,7 +9,9 @@ function MonstersShowCtrl(Monster, $stateParams){
   vm.monster = Monster.get($stateParams);
   vm.monstersDelete = () => {
     Monster
-    .delete($stateParams)
+    .delete($stateParams).then(
+      console.log('Deleted');
+    );
 
     //go to home when monster is deleted
     // .$promise.then(data => {
