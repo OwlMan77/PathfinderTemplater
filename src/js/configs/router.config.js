@@ -8,7 +8,8 @@ function Router($stateProvider, $locationProvider, $urlProvider){
   $stateProvider
   .state('monstersIndex',{
     url: '/monsters',
-    templateUrl: '/js/views/monsters/index.html'
-    // controller: 'monstersI'
+    templateUrl: '/js/views/monsters/index.html',
+    controller: 'MonstersIndexCtrl',
+    controllerAs: 'MonsterIndex'
   });
 }
