@@ -1,5 +1,5 @@
 angular
-  .module( 'monster', [
+  .module('pathfinderTemplater', [
     'ui-router',
     'ngResource'
   ]);

@@ -1,3 +1,3 @@
 angular
-  .module('pfTemplater')
+  .module('pathfinderTemplater')
   .constant('API', '${window.location.origin}/api');

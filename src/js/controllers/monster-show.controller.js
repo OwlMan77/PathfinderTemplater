@@ -1,5 +1,5 @@
 angular
-  .module('pfTemplater')
+  .module('pathfinderTemplater')
   .controller('MonstersShowCtrl', MonstersShowCtrl);
 
 MonstersShowCtrl.$index = ['Monster', '$stateParams'];
@@ -9,13 +9,12 @@ function MonstersShowCtrl(Monster, $stateParams){
   vm.monster = Monster.get($stateParams);
   vm.monstersDelete = () => {
     Monster
-    .delete($stateParams).then(
-      console.log('Deleted');
-    );
+    .delete($stateParams)
+    .then(console.log('Deleted'));
 
     //go to home when monster is deleted
     // .$promise.then(data => {
     //
     // })
-  }
+  };
 }
